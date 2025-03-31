@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles.css">
+    <script src="/home.js" defer></script>
+    <title>Memorista</title>
+</head>
+<body>
+    <%- include('partials/nav.ejs') %>
+    <div class="header">
+        <h1>Welcome to Memorista</h1>
+        <h2>Check Your Memory</h2>
+        <img
+        class="memory-pic"
+        src="images/memory-loss.png"
+        alt="happy fruit salad bowl"
+      />
+        
+    </div>
+    <div class="name-entry">
+        <label for="player-name">Enter Your Name:</label>
+        <input type="text" id="player-name" placeholder="Your Name">
+        <button id="save-name">Save Name</button>
+    </div>    
+    <div>
+        <p id="name-status"></p>
+    </div>   
+    <div class="difficulties">
+        <a class="enter" href="/easy">Easy</a>
+        <a class="enter" href="/medium">Medium</a>
+        <a class="enter" href="/hard">Hard</a>
+    </div>
+</body>
+</html>

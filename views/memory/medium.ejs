@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="/medium.js" defer></script>
+    <link rel="stylesheet" href="/styles.css">
+    <title>Medium</title>
+</head>
+<body>
+    <%- include('../partials/nav.ejs') %>
+    <div class="game-button">
+        <button class="begin-button">Begin</button>
+        <button class="test-button">Test</button>
+    </div>
+    <div class="cards-container">
+        <div class="card-main">
+            <div class="card"><%= card[0] %></div>
+            <div class="card"><%= card[1] %></div>
+            <div class="card"><%= card[2] %></div>
+            <div class="card"><%= card[3] %></div>
+            <div class="card"><%= card[4] %></div>
+        </div>
+        <div class="card-test-mainM">
+            <div class="card-testM"><%= cardTest[0] %></div>
+            <div class="card-testM"><%= cardTest[1] %></div>
+            <div class="card-testM"><%= cardTest[2] %></div>
+            <div class="card-testM"><%= cardTest[3] %></div>
+            <div class="card-testM"><%= cardTest[4] %></div>
+            <div class="card-testM"><%= cardTest[5] %></div>
+            <div class="card-testM"><%= cardTest[6] %></div>
+            <div class="card-testM"><%= cardTest[7] %></div>
+            <div class="card-testM"><%= cardTest[8] %></div>
+            <div class="card-testM"><%= cardTest[9] %></div>
+        </div>
+    </div>    
+    <div class="memory-resultsM">
+        <div class="card-result-main">
+            <div class="card-result"><%= card[0] %></div>
+            <div class="card-result"><%= card[1] %></div>
+            <div class="card-result"><%= card[2] %></div>
+            <div class="card-result"><%= card[3] %></div>
+            <div class="card-result"><%= card[4] %></div>
+        </div>
+        <div class="memory-score"></div>
+    </div>
+        <form id="scoreForm" action="/save-score" method="POST">
+           <input type="text" name="name" id="form-player-name">  <!-- changed this line - -->
+            <input type="hidden" name="percentage" id="scoreInput">
+            <input type="hidden" name="difficulty" value="medium">
+        </form>
+</body>
+</html>

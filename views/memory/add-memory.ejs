@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles.css">
+    <title>Add</title>
+</head>
+<body> 
+    <%- include('../partials/nav.ejs') %>
+    <form class="add-item" method="POST" action="/cards">
+        <div>
+            <label for="value">Value:</label>
+            <input type="text" id="value" name="value" placeholder="e.g., 🍎" required>
+        </div>
+        <div>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="e.g., Apple" required>
+        </div>
+        <div>
+            <label for="category">Category:</label>
+            <select id="category" name="category" required>
+                <option value="" disabled selected>Select a Category</option>
+                <option value="Shapes">Shapes</option>
+                <option value="People">People</option>
+                <option value="Objects">Object</option>
+            </select>
+        </div>
+        <button type="submit">Add Card</button>
+    </form>
+        <div class="list-emojis">
+            <% emojis.forEach(emoji => { %>
+                <div class="emoji-card">
+                    <a href="/add/<%= emoji._id %>"><%= emoji.value %></a>
+                </div>
+            <% }) %>
+        </div>
+    
+</body>
+</html>

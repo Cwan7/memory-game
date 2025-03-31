@@ -1,0 +1,310 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+#scoreForm {
+    display: none;
+}
+.card {
+    display: none;
+}
+.selected {
+    background-color: rgb(188, 253, 253);
+}
+.navbar-container {
+    display: flex;
+    background-color: rgb(166, 125, 145);
+    align-items: center;
+}
+.navbar {
+    display: flex;
+    justify-content: space-evenly; 
+    text-align: center;
+    font-size: 25px;
+    width: 100%;
+    border-bottom: 1px solid #000000;
+    box-shadow: 3px 3px 3px;;
+}
+.navbar > a {
+    text-decoration: none;
+    color: black;
+    width: 100%;
+    height: 100%;
+    padding: 5px 0;
+}
+.navbar > a:hover {
+    background-color: rgb(141, 82, 110);
+}
+body {
+    background-color: antiquewhite;
+}
+.header {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+.header img {
+    width: 50%;
+    max-width: 500px;
+    height: auto;
+}
+.header h1 {
+    padding-top: 10px;
+}
+.header h2 {
+    padding-bottom: 10px;
+}
+.name-entry {
+    display: flex;
+    justify-content: center;
+    gap:20px;
+    padding: 10px 0;
+    font-size: 30px;
+}
+.name-entry input {
+    font-size: 20px;
+    width: 150px;
+    text-align: center;
+}
+.name-entry button {
+    font-size: 20px;
+    padding: 0 5px;
+    border-radius: 6px;
+    background-color: rgb(166, 125, 145);
+    border: 1px solid black
+}
+.name-entry button:hover {
+    background-color: rgb(141, 82, 110);
+}
+div > p {
+    display: flex;
+    justify-content: center;
+}
+.difficulties {
+    display: flex;
+    justify-content: space-evenly;
+    height: 40px;
+}
+.difficulties a {
+    font-size: 35px;
+    padding: 5px 0;
+    text-decoration: none;
+    color: rgb(219, 66, 66);
+    border: none;
+}
+.difficulties-page {
+    display: flex;
+    justify-content: space-evenly;
+    height: 40px;
+}
+.difficulties-page a {
+    font-size: 35px;
+    padding: 5px 0;
+    text-decoration: none;
+    color: rgb(219, 66, 66);
+    border: none;
+}
+.difficulties-page a:hover {
+    color: rgb(156, 29, 29);
+}
+.difficulties a:hover {
+    color: rgb(156, 29, 29);
+}
+.image-difficulty {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.image-difficulty img {
+    width: 50%;
+    max-width: 500px;
+    height: auto;
+}
+.card-container {
+    display: flex;
+    flex-direction: column;
+}
+.card-main {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 22vw;
+    width: 22vw;
+    font-size: clamp(60px, 20vw, 300px);
+    /* max-width: 250px; 
+    max-height: 250px; */
+    margin-top: 30px;
+}
+.card-test-main {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 14vw;
+}
+.card-test-mainM {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 9vw
+}
+.card-test {
+    display: flex;
+    display: none;
+    cursor: pointer;
+    justify-content: space-evenly;
+    text-align: center;
+    align-items: center;
+    width: 16.667vw;
+}
+.card-testM {
+    display: flex;
+    display: none;
+    cursor: pointer;
+    justify-content: space-evenly;
+    text-align: center;
+    align-items: center;
+    width: 10vw;
+}
+.game-button {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 15px 0;
+}
+.begin-button, .test-button {
+    width: 150px;
+    font-size: 25px;
+    padding:5px 0;
+    border-radius: 5px;
+    border: none;
+    background-color: rgb(236, 115, 115);
+}
+.begin-button:hover, .test-button:hover {
+    cursor: pointer;
+    background-color: rgb(187, 74, 74);
+}
+.memory-results {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 14vw;
+}
+.memory-resultsM {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 9vw;
+}
+.card-result-main {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+.card-result {
+    display: none;
+}
+.memory-score {
+    display: flex;
+    justify-content: center;
+}
+.add-item {
+    margin-top: 30px;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+form div {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 400px;
+    margin-bottom: 15px;
+}
+.add-item > div >label {
+    color: rgb(0, 0, 0);
+    font-size: 25px;
+}
+.add-item > div > input[type="text"], select {
+    padding: 10px;
+    font-size: 1.1em;
+    border: 2px solid #dadabb;
+    border-radius: 5px;
+    background-color: #fff;
+    font-family: "DM Sans", sans-serif;
+}
+.add-item > button {
+    padding: 10px 20px;
+    background-color: rgb(236, 115, 115);
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    cursor: pointer;
+}
+.add-item > button:hover {
+    background-color: rgb(187, 74, 74);
+}
+.scores-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* repeat(count,track-size) will keep repeating the min size inclunding gap*/
+    gap: 20px; 
+    padding: 20px;
+}
+
+.score-card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.score-card p {
+    margin: 5px 0;
+    font-size: 16px;
+    color: #333;
+}
+.list-emojis {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+    gap: 10px;
+    padding: 20px;
+}
+.emoji-card {
+    display: flex;
+    font-size: 50px;
+}
+.emoji-card > a {
+    text-decoration: none;
+}
+.delete-emoji {
+    display: flex;
+    justify-content: center;
+    font-size: 40vw;
+    font-size: clamp(60px, 40vw, 500px);
+}
+.delete-button {
+    padding: 10px 20px;
+    background-color: rgb(236, 115, 115);
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    cursor: pointer;
+}
+.delete-button:hover {
+    background-color: rgb(187, 74, 74);;
+}
+@media (max-width: 550px) {
+    .name-entry {
+        font-size: 16px;
+    }
+}

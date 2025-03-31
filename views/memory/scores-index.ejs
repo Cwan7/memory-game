@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles.css">
+    <title>Difficulty</title>
+</head>
+<body>
+    <%- include('../partials/nav.ejs') %>
+    <div class="image-difficulty">
+        <img
+            class="memory-pic"
+            src="images/high-score.png"
+            alt="high-scores"
+        />
+    </div> 
+    <div class="difficulties-page">
+        <a class="enter" href="/scores/easy">Easy</a>
+        <a class="enter" href="/scores/medium">Medium</a>
+        <a class="enter" href="/scores/hard">Hard</a>
+    </div>
+</body>
+</html>

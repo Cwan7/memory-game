@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="/easy.js" defer></script>
+    <link rel="stylesheet" href="/styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <%- include('../partials/nav.ejs') %>
+    <div class="game-button">
+        <button class="begin-button">Begin</button>
+        <button class="test-button">Test</button>
+    </div>
+    <div class="cards-container">
+        <div class="card-main">
+            <div class="card"><%= card[0] %></div>
+            <div class="card"><%= card[1] %></div>
+            <div class="card"><%= card[2] %></div>
+        </div>
+        <div class="card-test-main">
+            <div class="card-test"><%= cardTest[0] %></div>
+            <div class="card-test"><%= cardTest[1] %></div>
+            <div class="card-test"><%= cardTest[2] %></div>
+            <div class="card-test"><%= cardTest[3] %></div>
+            <div class="card-test"><%= cardTest[4] %></div>
+            <div class="card-test"><%= cardTest[5] %></div>
+        </div>
+    </div>
+    <div class="memory-results">
+        <div class="card-result-main">
+            <div class="card-result"><%= card[0] %></div>
+            <div class="card-result"><%= card[1] %></div>
+            <div class="card-result"><%= card[2] %></div>
+        </div>
+        <div class="memory-score"></div>
+    </div>
+    <form id="scoreForm" action="/save-score" method="POST">
+        <input type="text" name="name" id="form-player-name"> 
+        <input type="hidden" name="percentage" id="scoreInput">
+        <input type="hidden" name="difficulty" value="easy">
+    </form>
+</body>
+</html>
