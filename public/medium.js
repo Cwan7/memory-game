@@ -26,7 +26,7 @@ beginButtonElement.addEventListener('click', () => {
     });
     setTimeout(() => {
         hasBegun = true
-    },4000)
+    },5000)
 })
 testButtonElement.addEventListener('click', () => {
     if(hasBegun === false) return

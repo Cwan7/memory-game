@@ -37,7 +37,7 @@ testElement.addEventListener('click', () => {
 })
 function userClicked(event) {
     if (userSelection.length < 3) {
-        const card = event.target; //NEED TO GRASP THIS MORE
+        const card = event.target; 
         userSelection.push(card.textContent);
         card.style.backgroundColor = 'lightblue';
         console.log(userSelection)

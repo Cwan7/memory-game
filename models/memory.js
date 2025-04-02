@@ -14,4 +14,4 @@ const resultSchema = new mongoose.Schema({
 })
 const Result = mongoose.model('Result', resultSchema);
 
-module.exports = { Result, Memory }; // when its exported to Server.js it will come in as an object.
+module.exports = {Result, Memory}; // when its exported to Server.js it will come in as an object.
